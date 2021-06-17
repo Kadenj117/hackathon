@@ -1,10 +1,15 @@
-
+/*
+refers to all the info on the current webpage
+*/
 * {
   --main-color: rgba(21, 113, 199, 0.527);
   cursor: none;
 }
 
-
+/*
+#kadenj is the id for the cursor div
+you can find it in the inject.js
+*/
 div#kadenj {
   width: 20px;
   height: 20px;
@@ -16,6 +21,9 @@ div#kadenj {
   animation: grow .5s infinite alternate;
 }
 
+/*
+this is the secondary gray bubble around the 
+*/
 div#kadenj::after {
   content: "";
     width: 30px;
@@ -29,20 +37,11 @@ div#kadenj::after {
     animation: grow2 .5s infinite alternate;
 }
 
-div#kadenj::before {
-  content: "";
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    border: 8px solid gray;
-    border-radius: 50%;
-    opacity: .5;
-    top: -6px;
-    left: -6px;
-    transition-duration: 200ms;
-    transition-timing-function: ease-out;
-}
 
+
+/*
+animation to grow and shrink for the main bubble 
+*/
 @keyframes grow {
   from {
     transform: scale(1);
@@ -52,6 +51,9 @@ to {
 }
 }
 
+/*
+animation to grow and shrink for the secondary
+*/
 @keyframes grow2 {
   from {
     transform: scale(1);
@@ -61,6 +63,9 @@ to {
 }
 }
 
+/*
+animation for the click method bubble
+*/
 @keyframes cursorAnim3 {
   0% {
       transform: scale(1);
@@ -74,6 +79,9 @@ to {
   }
 }
 
+/*
+click method css to create and animate the red circle
+*/
 #kadenj.expand {
   animation: cursorAnim3 .5s forwards;
   border: 1px solid red;

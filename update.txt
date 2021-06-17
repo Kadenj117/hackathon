@@ -1,0 +1,14 @@
+as you can tell i did a complete refactor of the code so now the pointer is working correctly however in some sites the pointer is centered
+correctly and others it is offset and i dont know why. if you want to spend some time working on it then you could try to fix that or 
+you could try to work on adding different colors to the cursor even though i have no idea how to start. you could also try to create
+a trailing div if you want to to add some flare.
+
+Ideas of things you can work on:
+  -Try to make a system to change the color of the pointer
+  -Try to fix the the offset on some of the websites
+  -create a secondary div that trails the first a bit slower to add flare
+  -add the ability for the cursor to change color or something when hovering over a button or link
+  - feel free to try other things if those are to difficult or unintersting(I couldnt get them to work)
+
+
+  p.s by the way the the manifest.json is very fragile be carefulr messing with it
