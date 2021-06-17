@@ -1,6 +1,14 @@
-let color = '#3aa757';
+const cursor = document.querySelector('#kadenj')
+console.log('cursor', cursor.id)
+document.addEventListener('mousemove', e => {
+  //console.log(cursor)
+  cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
+})
 
-chrome.runtime.onInstalled.addListener(() => {
-  chrome.storage.sync.set({ color });
-  console.log('Default background color set to %cgreen', `color: ${color}`);
-});
+document.addEventListener('click', () => {
+  cursor.classList.add("expand");
+
+  setTimeout(() => {
+    cursor.classList.remove("expand");
+  }, 500)
+})
